@@ -336,20 +336,23 @@ footer {
   .contact-list {
     width: 100%;
   }
+  header {
+    width: 100%;
+  }
   nav {
     background: none;
   }
   .nav {
     top: 100%;
     right: 20px;
-    background-color: rgb(147, 146, 146);
+    background-color: black;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     justify-content: center;
-    float: right;
-    margin-right: -40px;
-    margin-top: 50px;
+    text-align: center;
+
+    margin-top: 0px;
     width: fit-content;
   }
   .hidden {
@@ -357,12 +360,12 @@ footer {
   }
   .checkbtn {
     display: block;
-    margin: 50px;
+    margin: 10px 50px;
   }
   .nav a {
     display: block;
     line-height: 3px;
     padding: 5px;
-    color: black;
+    color: rgb(253, 249, 249);
   }
 }
