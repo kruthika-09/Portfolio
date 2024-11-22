@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+  background-color: black;
+  color: white;
+  line-height: 1.6;
+  width: 100%;
+}
+
+header {
+  margin: 0px;
+}
+nav {
+  position: fixed;
+  z-index: 1;
+  background-color: rgb(173, 172, 172);
+  height: 50px;
+  width: 100%;
+  margin: 0px;
+}
+.nav {
+  display: flex;
+  margin-left: 300px;
+  list-style: none;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+}
+.nav a:hover {
+  cursor: pointer;
+  color: black;
+}
+.nav a:focus {
+  cursor: pointer;
+  color: white;
+}
+#about {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+}
+.my-pic {
+  width: 450px;
+  height: 450px;
+  margin: 20px;
+  margin-top: 40px;
+  filter: brightness(65%);
+}
+.description {
+  text-align: center;
+  margin: 40px;
+  color: rgb(147, 146, 146);
+}
+h2 {
+  font-size: 34px;
+  color: rgb(173, 172, 172);
+}
+section {
+  height: 100vh;
+  background-image: url("https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9120.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+.heading {
+  width: 50%;
+  margin: 50px;
+  height: fit-content;
+  border: white solid 2px;
+  border-radius: 5px 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 30px;
+  font-weight: 600;
+  color: white;
+}
+#about .resume-buttons {
+  margin-top: 50px;
+}
+.resume-buttons a {
+  text-decoration: none;
+  margin: 20px;
+  color: white;
+  border: 1px solid rgb(173, 172, 172);
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+.resume-buttons a:hover {
+  box-shadow: 0 4px 15px rgba(237, 237, 238, 0.5);
+  cursor: pointer;
+}
+.graduation {
+  text-align: center;
+  color: rgb(147, 146, 146);
+  line-height: 1.5rem;
+  margin: 0px 50px;
+}
+.final-project {
+  text-align: center;
+  color: rgb(147, 146, 146);
+  line-height: 1.5rem;
+  margin: 0px 50px;
+}
+/* Skills Section */
+summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+summary::after {
+  content: "";
+  width: 18px;
+  height: 10px;
+  background: url("https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg")
+    no-repeat;
+  background-size: cover;
+  transition: 0.2s;
+}
+
+details[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary {
+  border-radius: 5px 5px 0 0;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px;
+}
+
+.skill {
+  color: white;
+  border: rgb(147, 146, 146) solid 2px;
+  padding: 10px 15px;
+  margin: 20px;
+  border-radius: 5px;
+  flex: 1 1 120px;
+  text-align: center;
+}
+.skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(231, 232, 234, 0.5);
+  cursor: pointer;
+}
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 120vh;
+}
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -10px;
+}
+.project {
+  color: white;
+  border: rgb(147, 146, 146) solid 2px;
+  padding: 5px 5px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  flex: 1 1 30%;
+}
+/* Contact List */
+.contact-list {
+  list-style: none;
+  width: 50%;
+  margin-left: 60px;
+}
+
+.contact-list li {
+  font-size: 30px;
+  margin: 30px;
+  color: rgb(173, 172, 172);
+}
+.contact-list a {
+  text-decoration: none;
+  color: rgb(173, 172, 172);
+}
+
+.contact-list i {
+  margin-right: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #333;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  margin-top: -60px;
+  cursor: pointer;
+}
+#check {
+  display: none;
+}
+#certificate-details {
+  position: relative;
+}
+#certificate-details ul {
+  margin: 50px;
+}
+#certificate-details li {
+  margin: 30px;
+  color: rgb(173, 172, 172);
+}
+#certificate-details a {
+  text-decoration: none;
+  color: rgb(173, 172, 172);
+}
+
+#certificate-images {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#certificate-images .certificate {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+#certificate-images img {
+  width: 700px;
+  height: 500px;
+}
+#certificate-images .close {
+  text-align: right;
+  border: none;
+  background: none;
+  font-size: 30px;
+}
+#certificate-images a:hover {
+  color: rgb(241, 32, 32);
+  cursor: pointer;
+}
+#certificate-images a {
+  color: white;
+  text-decoration: none;
+}
+.hide {
+  visibility: hidden;
+}
+@media (max-width: 480px) {
+  section {
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9120.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+  }
+  #about {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .my-pic {
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+  }
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contact-list {
+    width: 100%;
+  }
+  #certificate-images img {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (max-width: 780px) {
+  section {
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9120.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+  }
+  #about {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .my-pic {
+    width: 400px;
+    height: 400px;
+    margin: 30px;
+  }
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contact-list {
+    width: 100%;
+  }
+  nav {
+    background: none;
+  }
+  .nav {
+    top: 100%;
+    right: 20px;
+    background-color: rgb(147, 146, 146);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    float: right;
+    margin-right: -40px;
+    margin-top: 50px;
+    width: fit-content;
+  }
+  .hidden {
+    visibility: hidden;
+  }
+  .checkbtn {
+    display: block;
+    margin: 50px;
+  }
+  .nav a {
+    display: block;
+    line-height: 3px;
+    padding: 5px;
+    color: black;
+  }
+}
