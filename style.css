@@ -282,7 +282,7 @@ footer {
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #ddd;
-    font-size: 15px;
+    font-size: 10px;
   }
   #about {
     display: flex;

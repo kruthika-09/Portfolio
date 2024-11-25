@@ -27,6 +27,15 @@ if (checkBtn) {
     }
   });
 }
+const navLinks = document.querySelectorAll(".nav-link");
+
+// Loop through each nav link and add the event listener
+navLinks.forEach(function (navLink) {
+  navLink.addEventListener("click", function () {
+    const nav = document.querySelector(".nav");
+    nav.classList.add("hidden");
+  });
+});
 
 // Function to show the appropriate certificate based on the URL hash
 function showCertificate() {
